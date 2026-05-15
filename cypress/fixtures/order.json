@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "name": "Space флюоресцентный бургер",
+  "order": {
+    "ingredients": [],
+    "_id": "order-mock-id",
+    "owner": {
+      "name": "Тестовый пользователь",
+      "email": "student@burger.test",
+      "createdAt": "2025-01-01T10:00:00.000Z",
+      "updatedAt": "2025-01-01T10:00:00.000Z"
+    },
+    "status": "done",
+    "name": "Space флюоресцентный бургер",
+    "createdAt": "2025-01-01T10:00:00.000Z",
+    "updatedAt": "2025-01-01T10:00:00.000Z",
+    "number": 84721,
+    "price": 2350
+  }
+}
