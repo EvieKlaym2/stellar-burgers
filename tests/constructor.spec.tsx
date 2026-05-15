@@ -46,9 +46,11 @@ test.describe('Модальное окно ингредиента', () => {
   }) => {
     await page.getByRole('link', { name: 'Булка' }).click();
 
-    await expect(page.getByText('Детали ингредиента')).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'Булка' })).toBeVisible();
-    await expect(page.getByText('200')).toBeVisible();
+    const modals = page.locator('#modals');
+    await expect(modals).not.toBeEmpty();
+    await expect(modals.getByText('Детали ингредиента')).toBeVisible();
+    await expect(modals.getByRole('heading', { name: 'Булка' })).toBeVisible();
+    await expect(modals.getByText('200')).toBeVisible();
   });
 
   test('закрывает модалку по клику на крестик', async ({ page }) => {

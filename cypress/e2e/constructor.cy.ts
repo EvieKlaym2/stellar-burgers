@@ -37,9 +37,12 @@ describe('Модальное окно ингредиента', () => {
   it('открывает модалку с данными выбранного ингредиента', () => {
     cy.contains('a', 'Булка').click();
 
-    cy.contains('Детали ингредиента').should('be.visible');
-    cy.contains('h3', 'Булка').should('be.visible');
-    cy.contains('200').should('be.visible');
+    cy.get('#modals').should('not.be.empty');
+    cy.get('#modals').within(() => {
+      cy.contains('Детали ингредиента').should('be.visible');
+      cy.contains('h3', 'Булка').should('be.visible');
+      cy.contains('200').should('be.visible');
+    });
   });
 
   it('закрывает модалку по клику на крестик', () => {
