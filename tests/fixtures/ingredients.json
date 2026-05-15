@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "data": [
+    {
+      "_id": "1",
+      "name": "Булка",
+      "type": "bun",
+      "proteins": 50,
+      "fat": 10,
+      "carbohydrates": 30,
+      "calories": 200,
+      "price": 1000,
+      "image": "https://burger/bun.png",
+      "image_mobile": "https://burger/bun-mobile.png",
+      "image_large": "https://burger/bun-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "2",
+      "name": "Котлета",
+      "type": "main",
+      "proteins": 100,
+      "fat": 50,
+      "carbohydrates": 10,
+      "calories": 500,
+      "price": 300,
+      "image": "https://burger/meat.png",
+      "image_mobile": "https://burger/meat-mobile.png",
+      "image_large": "https://burger/meat-large.png",
+      "__v": 0
+    },
+    {
+      "_id": "3",
+      "name": "Соус",
+      "type": "sauce",
+      "proteins": 5,
+      "fat": 15,
+      "carbohydrates": 20,
+      "calories": 80,
+      "price": 50,
+      "image": "https://burger/sauce.png",
+      "image_mobile": "https://burger/sauce-mobile.png",
+      "image_large": "https://burger/sauce-large.png",
+      "__v": 0
+    }
+  ]
+}

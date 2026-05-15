@@ -67,7 +67,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.15",
     "eslint-webpack-plugin": "^4.0.1",
+    "@playwright/test": "^1.49.0",
     "fetch-mock": "^9.11.0",
+    "identity-obj-proxy": "^3.0.0",
     "html-webpack-plugin": "^5.6.0",
     "jest": "^29.7.0",
     "jest-css-modules-transform": "^4.4.2",
@@ -91,7 +93,13 @@
     "build-storybook": "storybook build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "lint:fix": "npm run lint -- --fix",
-    "format": "prettier ./src --write"
+    "format": "prettier ./src --write",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:playwright": "playwright test",
+    "test:playwright:ui": "playwright test --ui",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser electron"
   },
   "eslintConfig": {
     "extends": [
